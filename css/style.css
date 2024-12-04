@@ -1,0 +1,30 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.375;
+    color: #2C2A29;
+    background: #fff;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+/* Typography */
+p {
+    margin-bottom: 16px;
+}
+
+/* Sections */
+.section {
+    margin-bottom: 40px;
+}
