@@ -20,6 +20,11 @@ body {
 }
 
 /* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+}
+
 p {
     margin-bottom: 16px;
 }
@@ -27,4 +32,108 @@ p {
 /* Sections */
 .section {
     margin-bottom: 40px;
+}
+
+.section__intro {
+    max-width: 810px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section__title {
+    font-family: 'Lora', serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin: 0 0 27px;
+}
+
+.section__slider {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    margin: 0 0 27px;
+}
+
+.slider__container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider__item {
+    min-width: 50%;
+    transition: transform 0.5s ease-in-out;
+    padding: 0 2px;
+}
+
+.slider__image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.section__grid {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.grid__item--text {
+    padding: 20px;
+    background: #F4F0EA;
+    border-radius: 16px;
+}
+
+.grid__image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.grid__title {
+    font-size: 2rem;
+    line-height: 1.3125;
+    margin: 0 0 16px;
+}
+
+.grid__subtitle {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin: 0 0 8px;
+}
+
+/* Style for desktop */
+@media (min-width: 1024px) {
+    .order__lg-first {
+        order: -1;
+    }
+
+    .order__lg-last {
+        order: 2;
+    }
+
+    .section__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+        align-items: flex-end;
+    }
+
+    .grid__item {
+        height: 100%;
+    }
+
+    .grid__item--text {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        border-radius: 24px;
+    }
+
+    .grid__image {
+        border-radius: 24px;
+    }
 }
